@@ -1,0 +1,724 @@
+$mainFontFamily: 'Poppins', sans-serif; // main font-family from google fonts
+
+$paragraphColor: #878787; // paragraph color
+
+$secondBackGroundColor: #f6f6f8; //second background color
+
+$hoverColor: #56cfe1;
+
+body {
+    font-family: $mainFontFamily;
+    background-color: #ffffff;
+    height: 4000px;
+    color: #000;
+}
+
+/* Start Header
+    background-image: -moz-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
+    background-image: -webkit-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
+    background: #f02349 linear-gradient(135deg,#f02349,#ffaa9b);
+*/
+
+header {
+    background: linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
+    overflow: hidden;
+    padding-top: 85px;
+        
+    .myImg-box {
+        text-align: center;
+
+        img {
+            width: 350px;
+        }
+    }
+    .hd-indfo {
+        h1 {
+            color: #fff;
+            font-weight: 100;
+
+            span {
+                display: block;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 575.99px) {
+    header {
+        padding-top: 50px;
+        
+        .myImg-box {
+
+            img {
+                width: 250px;
+            }
+        }
+
+        .hd-indfo {
+            margin: auto;
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    header {
+        padding-top: 65px;
+        
+        .myImg-box {
+            
+            img {
+                width: 340px;
+            }
+        }
+        .hd-indfo {
+            margin: auto;
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    header {
+        
+         .myImg-box {
+             
+            img {
+                width: 300px;
+            }
+        }
+        .hd-indfo {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200.99px) {
+    header {
+        
+        .hd-indfo {
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+/* End Header */
+
+/* Start Personal Information */
+
+.per-info {
+    padding: 60px 0;
+    background-color: #f02349;
+    
+    h2 {
+        margin-bottom: 60px;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    .introduceChat {
+        display: flex;
+        margin-bottom: 6px;
+        
+        .boxImgChat {
+            min-width: 50px;
+            width: 50px;
+            min-height: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50px;
+            box-shadow: 0 2px 14px -4px #555;
+            margin: 0 15px;
+        }
+
+        .boxIntroChat {
+            background-color: #fff;
+            color: #000;
+            min-height: 30px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 14px -6px #555;
+        }
+    }
+    
+    .meChat {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 6px;
+        
+        .boxImgChat {
+            min-width: 50px;
+            width: 50px;
+            min-height: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50px;
+            box-shadow: 0 2px 14px -4px #555;
+            margin: 0 15px;
+            padding-top: 5px;
+            background-color: #fff;
+        }
+        
+        .boxMeChat {
+            background: #4461e0 linear-gradient(135deg,#4461e0,#2983d8);
+            color: #fff;
+            min-height: 30px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 14px -6px #555;
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 576.99px) {
+    .per-info {
+        padding: 35px 0;
+        
+        h2 {
+            margin-bottom: 35px;
+            font-size: 2.1rem;
+        }
+        
+        .introduceChat {
+
+            .boxImgChat {
+                margin: 0 8px;
+            }
+
+            .boxIntroChat {
+                padding: 10px 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .meChat {
+
+            .boxImgChat {
+                margin: 0 8px;
+            }
+
+            .boxMeChat {
+                padding: 10px 10px;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* End Personal Information */
+
+/* Start Academic Qualifications */
+
+.study {
+        
+    .col-6 {
+        padding: 0;
+    }
+    .box-study {
+        padding: 50px;
+
+        h2 {
+            margin-bottom: 40px;
+            font-size: 2.1rem;
+            font-weight: 700;
+        }
+
+        .as-study {
+            width: 250px;
+            height: 100px;
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 14px -6px #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .an-study {
+            width: 390px;
+            height: 100px;
+            background: #f02349;
+            color: #fff;
+            box-shadow: 0 0 14px -6px #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 575.99px) {
+    .study {
+        padding: 25px 0;
+        
+        .box-study {
+            padding: 0;
+
+            h2 {
+                margin-bottom: 30px;
+                font-size: 2.1rem;
+            }
+
+            .as-study {
+                width: 160px;
+                height: 50px;
+                font-size: 1.2rem;
+                border-radius: 15px;
+                padding: 15px;
+            }
+
+            .an-study {
+                width: 225px;
+                height: 70px;
+                border-radius: 15px;
+                font-size: 1.1rem;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .study {
+        
+        .box-study {
+            padding: 25px 30px;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            .as-study {
+                width: 200px;
+                height: 70px;
+                border-radius: 15px;
+            }
+
+            .an-study {
+                width: 355px;
+                height: 75px;
+                border-radius: 15px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .study {
+        
+        .box-study {
+            padding: 20px 0;
+
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            .as-study {
+                width: 170px;
+                height: 55px;
+                border-radius: 15px;
+            }
+
+            .an-study {
+                width: 215px;
+                height: 70px;
+                border-radius: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200.99px) {
+    .study {
+        
+        .box-study {
+            padding: 35px 25px;
+            
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            .as-study {
+                width: 220px;
+                height: 75px;
+                border-radius: 15px;
+            }
+
+            .an-study {
+                width: 350px;
+                height: 75px;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+/* End Academic Qualifications */
+
+/* Start My Skills */
+
+.mySkills {
+    padding: 60px 0;
+    background: #4461e0;
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+        color: #fff;
+    }
+    
+    h3 {
+        padding: 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.99px) {
+    .mySkills {
+        padding: 30px 0;
+        
+        h2 {
+            font-size: 2.1rem;
+            margin-bottom: 30px;
+        }
+        
+        h3 {
+            font-size: 1.2rem
+        }
+    }
+}
+
+/* End My Skills */
+
+/* Start Languages */
+
+.languages {
+    background-color: #262626;
+    padding: 60px 0 80px;
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: #7d7d7d;
+    }
+    
+    .box-lang {
+        border: 1px solid #7d7d7d;
+        border-radius: 25px;
+        padding: 20px;
+        color: #7d7d7d;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 575.99px) {
+    .languages{
+        padding: 35px 0 40px;
+        
+        h2 {
+            font-size: 2.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .box-lang {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+    }
+}
+
+/* End Languages */
+
+/* Start My Experience */
+
+.myExp {
+    padding: 65px 0;
+    
+    .expDel {
+        padding: 25px 0;
+        text-align: center;
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            font-size: 1.4rem;
+            border: 1px solid #555;
+            padding: 20px;
+            border-radius: 25px;
+            display: inline-block;
+            box-shadow: 0 0 13px -4px #555;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 575.99px) {
+    .myExp {
+        padding: 30px 0;
+        
+        .expDel {
+            padding: 0;
+
+            h2 {
+                font-size: 1.7rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                padding: 10px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .myExp {
+        padding: 25px 0;
+        
+        .expDel {
+            padding: 0;
+
+            h2 {
+                font-size: 1.9rem;
+                margin-bottom: 35px;
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding: 10px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .myExp {
+        padding: 25px 0;
+        
+        .expDel {
+            padding: 0;
+
+            h2 {
+                font-size: 1.7rem;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding: 7px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/* End My Experience */
+
+/* Start My Hobbies */
+
+.hobbies {
+    padding: 60px 0 150px;
+    background-color: #f02349;
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+        color: #fff;
+    }
+    
+    .box-hobbie {
+        text-align: center;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0 1px 15px -5px #555;
+        margin-bottom: 25px;
+        
+        img {
+            width: 90px;
+        }
+        
+        h3 {
+            margin-top: 40px;
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 575.99px) {
+    .hobbies {
+        padding: 30px 0;
+        
+        h2 {
+            font-size: 2.1rem;
+            margin-bottom: 35px;
+        }
+        
+        .box-hobbie {
+            padding: 15px;
+            margin-bottom: 15px;
+
+            img {
+                width: 60px;
+            }
+
+            h3 {
+                margin-top: 15px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .hobbies {
+        padding: 60px 0 80px;
+    }
+}
+
+/* End My Hobbies */
+
+/* Start Soft Skills */
+
+.softSkills {
+    background: linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
+    padding: 60px 0;
+    color: #fff;
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    
+    ul {
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 575.99px) {
+    .softSkills {
+        padding: 30px 0 20px;
+        
+        h2 {
+            font-size: 2.1rem;
+            margin-bottom: 25px;
+        }
+        
+        ul {
+            
+            li {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+/* End Soft Skills */
+
+/*
+
+@media (min-width: 768px) and (max-width: 991px)
+
+@media (min-width: 992px) and (max-width: 1199px)
+
+@media (max-width: 767px)
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

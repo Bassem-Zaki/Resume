@@ -1,0 +1,576 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  height: 4000px;
+  color: #000;
+}
+
+/* Start Header
+    background-image: -moz-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
+    background-image: -webkit-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
+    background: #f02349 linear-gradient(135deg,#f02349,#ffaa9b);
+*/
+header {
+  background: -webkit-gradient(linear, left bottom, left top, from(#62bdfc), to(#8490ff));
+  background: linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  overflow: hidden;
+  padding-top: 85px;
+}
+header .myImg-box {
+  text-align: center;
+}
+header .myImg-box img {
+  width: 350px;
+}
+header .hd-indfo h1 {
+  color: #fff;
+  font-weight: 100;
+}
+header .hd-indfo h1 span {
+  display: block;
+  font-weight: 700;
+}
+header .hd-indfo p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 575.99px) {
+  header {
+    padding-top: 50px;
+  }
+  header .myImg-box img {
+    width: 250px;
+  }
+  header .hd-indfo {
+    margin: auto;
+  }
+  header .hd-indfo h1 {
+    font-size: 2rem;
+  }
+  header .hd-indfo p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  header {
+    padding-top: 65px;
+  }
+  header .myImg-box img {
+    width: 340px;
+  }
+  header .hd-indfo {
+    margin: auto;
+  }
+  header .hd-indfo p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  header .myImg-box img {
+    width: 300px;
+  }
+  header .hd-indfo h1 {
+    font-size: 2rem;
+  }
+  header .hd-indfo p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200.99px) {
+  header .hd-indfo p {
+    font-size: 1.4rem;
+  }
+}
+/* End Header */
+/* Start Personal Information */
+.per-info {
+  padding: 60px 0;
+  background-color: #f02349;
+}
+.per-info h2 {
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.per-info .introduceChat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6px;
+}
+.per-info .introduceChat .boxImgChat {
+  min-width: 50px;
+  width: 50px;
+  min-height: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 2px 14px -4px #555;
+          box-shadow: 0 2px 14px -4px #555;
+  margin: 0 15px;
+}
+.per-info .introduceChat .boxIntroChat {
+  background-color: #fff;
+  color: #000;
+  min-height: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 14px -6px #555;
+          box-shadow: 0 0 14px -6px #555;
+}
+.per-info .meChat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 6px;
+}
+.per-info .meChat .boxImgChat {
+  min-width: 50px;
+  width: 50px;
+  min-height: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 2px 14px -4px #555;
+          box-shadow: 0 2px 14px -4px #555;
+  margin: 0 15px;
+  padding-top: 5px;
+  background-color: #fff;
+}
+.per-info .meChat .boxMeChat {
+  background: #4461e0 linear-gradient(135deg, #4461e0, #2983d8);
+  color: #fff;
+  min-height: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 14px -6px #555;
+          box-shadow: 0 0 14px -6px #555;
+  text-align: right;
+}
+
+@media (max-width: 576.99px) {
+  .per-info {
+    padding: 35px 0;
+  }
+  .per-info h2 {
+    margin-bottom: 35px;
+    font-size: 2.1rem;
+  }
+  .per-info .introduceChat .boxImgChat {
+    margin: 0 8px;
+  }
+  .per-info .introduceChat .boxIntroChat {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+  }
+  .per-info .meChat .boxImgChat {
+    margin: 0 8px;
+  }
+  .per-info .meChat .boxMeChat {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+/* End Personal Information */
+/* Start Academic Qualifications */
+.study .col-6 {
+  padding: 0;
+}
+.study .box-study {
+  padding: 50px;
+}
+.study .box-study h2 {
+  margin-bottom: 40px;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.study .box-study .as-study {
+  width: 250px;
+  height: 100px;
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 0 0 14px -6px #555;
+          box-shadow: 0 0 14px -6px #555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.study .box-study .as-study p {
+  margin-bottom: 0;
+}
+.study .box-study .an-study {
+  width: 390px;
+  height: 100px;
+  background: #f02349;
+  color: #fff;
+  -webkit-box-shadow: 0 0 14px -6px #555;
+          box-shadow: 0 0 14px -6px #555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 575.99px) {
+  .study {
+    padding: 25px 0;
+  }
+  .study .box-study {
+    padding: 0;
+  }
+  .study .box-study h2 {
+    margin-bottom: 30px;
+    font-size: 2.1rem;
+  }
+  .study .box-study .as-study {
+    width: 160px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .study .box-study .an-study {
+    width: 225px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    line-height: 22px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .study .box-study {
+    padding: 25px 30px;
+  }
+  .study .box-study h2 {
+    margin-bottom: 30px;
+  }
+  .study .box-study .as-study {
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  .study .box-study .an-study {
+    width: 355px;
+    height: 75px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .study .box-study {
+    padding: 20px 0;
+  }
+  .study .box-study h2 {
+    margin-bottom: 15px;
+  }
+  .study .box-study .as-study {
+    width: 170px;
+    height: 55px;
+    border-radius: 15px;
+  }
+  .study .box-study .an-study {
+    width: 215px;
+    height: 70px;
+    border-radius: 15px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200.99px) {
+  .study .box-study {
+    padding: 35px 25px;
+  }
+  .study .box-study h2 {
+    margin-bottom: 20px;
+  }
+  .study .box-study .as-study {
+    width: 220px;
+    height: 75px;
+    border-radius: 15px;
+  }
+  .study .box-study .an-study {
+    width: 350px;
+    height: 75px;
+    border-radius: 15px;
+  }
+}
+/* End Academic Qualifications */
+/* Start My Skills */
+.mySkills {
+  padding: 60px 0;
+  background: #4461e0;
+}
+.mySkills h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+}
+.mySkills h3 {
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 575.99px) {
+  .mySkills {
+    padding: 30px 0;
+  }
+  .mySkills h2 {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+  }
+  .mySkills h3 {
+    font-size: 1.2rem;
+  }
+}
+/* End My Skills */
+/* Start Languages */
+.languages {
+  background-color: #262626;
+  padding: 60px 0 80px;
+}
+.languages h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #7d7d7d;
+}
+.languages .box-lang {
+  border: 1px solid #7d7d7d;
+  border-radius: 25px;
+  padding: 20px;
+  color: #7d7d7d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.languages .box-lang p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.99px) {
+  .languages {
+    padding: 35px 0 40px;
+  }
+  .languages h2 {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+  }
+  .languages .box-lang {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+}
+/* End Languages */
+/* Start My Experience */
+.myExp {
+  padding: 65px 0;
+}
+.myExp .expDel {
+  padding: 25px 0;
+  text-align: center;
+}
+.myExp .expDel h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.myExp .expDel p {
+  font-size: 1.4rem;
+  border: 1px solid #555;
+  padding: 20px;
+  border-radius: 25px;
+  display: inline-block;
+  -webkit-box-shadow: 0 0 13px -4px #555;
+          box-shadow: 0 0 13px -4px #555;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 575.99px) {
+  .myExp {
+    padding: 30px 0;
+  }
+  .myExp .expDel {
+    padding: 0;
+  }
+  .myExp .expDel h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .myExp .expDel p {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .myExp {
+    padding: 25px 0;
+  }
+  .myExp .expDel {
+    padding: 0;
+  }
+  .myExp .expDel h2 {
+    font-size: 1.9rem;
+    margin-bottom: 35px;
+  }
+  .myExp .expDel p {
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .myExp {
+    padding: 25px 0;
+  }
+  .myExp .expDel {
+    padding: 0;
+  }
+  .myExp .expDel h2 {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+  }
+  .myExp .expDel p {
+    font-size: 1.3rem;
+    padding: 7px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+}
+/* End My Experience */
+/* Start My Hobbies */
+.hobbies {
+  padding: 60px 0 150px;
+  background-color: #f02349;
+}
+.hobbies h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+}
+.hobbies .box-hobbie {
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 1px 15px -5px #555;
+          box-shadow: 0 1px 15px -5px #555;
+  margin-bottom: 25px;
+}
+.hobbies .box-hobbie img {
+  width: 90px;
+}
+.hobbies .box-hobbie h3 {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 575.99px) {
+  .hobbies {
+    padding: 30px 0;
+  }
+  .hobbies h2 {
+    font-size: 2.1rem;
+    margin-bottom: 35px;
+  }
+  .hobbies .box-hobbie {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .hobbies .box-hobbie img {
+    width: 60px;
+  }
+  .hobbies .box-hobbie h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .hobbies {
+    padding: 60px 0 80px;
+  }
+}
+/* End My Hobbies */
+/* Start Soft Skills */
+.softSkills {
+  background: -webkit-gradient(linear, left bottom, left top, from(#62bdfc), to(#8490ff));
+  background: linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  padding: 60px 0;
+  color: #fff;
+}
+.softSkills h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.softSkills ul li {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 575.99px) {
+  .softSkills {
+    padding: 30px 0 20px;
+  }
+  .softSkills h2 {
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+  }
+  .softSkills ul li {
+    font-size: 1.1rem;
+  }
+}
+/* End Soft Skills */
+/*
+
+@media (min-width: 768px) and (max-width: 991px)
+
+@media (min-width: 992px) and (max-width: 1199px)
+
+@media (max-width: 767px)
+
+*/
+
+/*# sourceMappingURL=style.css.map */
