@@ -1,23 +1,7 @@
-$mainFontFamily: 'Poppins', sans-serif; // main font-family from google fonts
-
-$paragraphColor: #878787; // paragraph color
-
-$secondBackGroundColor: #f6f6f8; //second background color
-
-$hoverColor: #56cfe1;
-
 body {
-    font-family: $mainFontFamily;
+    font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
-    height: 4000px;
-    color: #000;
 }
-
-/* Start Header
-    background-image: -moz-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
-    background-image: -webkit-linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
-    background: #f02349 linear-gradient(135deg,#f02349,#ffaa9b);
-*/
 
 header {
     background: linear-gradient(0deg,#62bdfc 0%,#8490ff 100%);
@@ -29,6 +13,7 @@ header {
 
         img {
             width: 350px;
+            opacity: 0;
         }
     }
     .hd-indfo {
@@ -63,11 +48,11 @@ header {
         .hd-indfo {
             margin: auto;
             h1 {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
 
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }
@@ -686,39 +671,3 @@ header {
 }
 
 /* End Soft Skills */
-
-/*
-
-@media (min-width: 768px) and (max-width: 991px)
-
-@media (min-width: 992px) and (max-width: 1199px)
-
-@media (max-width: 767px)
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
