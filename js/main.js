@@ -4,6 +4,8 @@ $(function () {
     
     'use strict';
     
-    $("#myImg").show(2000);
+    $("#myImg").animate({
+        opacity: "1"
+    }, 1700);
     
 });
